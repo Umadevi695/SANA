@@ -1,0 +1,7 @@
+flutter/ephemeral
+build/
+.dart_tool/
+*.apk
+*.aab
+echo ".idea/" >> .gitignore
+echo "*.iml" >> .gitignore
