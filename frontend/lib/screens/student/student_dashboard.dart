@@ -199,7 +199,7 @@ class _HomeContent extends StatelessWidget {
                 physics: const NeverScrollableScrollPhysics(),
                 crossAxisSpacing: 10,
                 mainAxisSpacing: 10,
-                childAspectRatio: .78,
+                childAspectRatio: .65,
                 children: [
                   _StatCard(
                     number: approvedNotices.length.toString(),
