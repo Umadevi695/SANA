@@ -5,7 +5,9 @@ const processNotice = (filePath) => {
   return new Promise((resolve, reject) => {
     const pythonFile = path.join(__dirname, "../../process_notice.py");
 
-    const python = spawn("py", [pythonFile, filePath]);
+    //const python = spawn("py", [pythonFile, filePath]);
+    const pythonCommand = process.env.PYTHON_COMMAND || "py";
+const python = spawn(pythonCommand, [pythonFile, filePath]);
 
     let result = "";
     let errorOutput = "";
